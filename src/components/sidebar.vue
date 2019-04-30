@@ -17,7 +17,7 @@
                   <span>关于</span>
               </li>
             </router-link>
-            <router-link to="/login">
+            <router-link to="/signIn">
               <li class="nav">
                   <span>登录</span>
               </li>
@@ -35,6 +35,42 @@
           </ul>
 
       </nav>
+      <div class="info">
+          <img src="../../favicon.png" alt="head">
+          <div class="info_name">LilyChenlin</div>
+          <div class="archive">
+            <ul>
+              <router-link to="/article"> 
+                <li>
+                  <span class="archive_count">14</span>
+                  <span class="archive_name">日志</span>
+                </li>
+              </router-link>
+            </ul>
+          </div>
+          <ul class="communication">
+            <li class="communication_item">
+              <a href="#">
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li class="communication_item">
+              <a href="#">
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li class="communication_item">
+              <a href="#">
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li class="communication_item">
+              <a href="#">
+                <span>GitHub</span>
+              </a>
+            </li>
+          </ul>
+      </div>
   </div>
 </template>
 
@@ -65,7 +101,7 @@ export default {
     background: #FFFFCC;
   }
   .menu_name {
-    background:#FFCCCC;
+    background: rgb(38, 42, 48);
     color: white;
     padding: 10px 0;
   }
@@ -92,8 +128,9 @@ export default {
   }
 
   .info img {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
 
   .archive {

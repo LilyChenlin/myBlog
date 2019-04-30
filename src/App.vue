@@ -1,16 +1,17 @@
 <template>
-  <div id="app">
+  <div>
     <div class="black_line"></div>
     <div id="main">
       <router-view name="sidebar"></router-view>
+      <!-- <router-view name="article"></router-view> -->
+      <router-view></router-view>
     </div>
-    <router-view/>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'app'
 }
 </script>
 
@@ -128,12 +129,17 @@ export default {
   .black_line {
     width: 100%;
     height: 2px;
-    background: #FF9999;
+    background: #000;
   }
   #main {
     overflow: hidden;
     width: 960px;
     text-align: center;
     margin: auto;
+  }
+    #content {
+    width: 700px;
+    float: left;
+    background: white;
   }
 </style>

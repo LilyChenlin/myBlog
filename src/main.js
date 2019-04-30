@@ -14,9 +14,7 @@ components.forEach((item) => {
   Vue.component(item.name, item)
   // console.log(item);
 })
-// 引入自定义i组件
-// import sidebar from './components/sidebar.vue'
-// import article from './components/article.vue'
+
 
 Vue.use(VueRouter);
 Vue.prototype.$ajax = axios;
@@ -25,8 +23,6 @@ const router = new VueRouter({
   routes
 })
 new Vue({
-  el: '#app',
-  router,
-  render: h => h(App),
-  // template:'<App/>'
+  router:router,
+  render: h => h(App)
 }).$mount('#app')
